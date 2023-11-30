@@ -1,0 +1,209 @@
+
+.newpost-btn {
+  align-items: center;
+  background-color: var(--yellow);
+  border-radius: 2px;
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 5px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  max-width: 128px;
+}
+.getmenu{
+  display: none;
+}
+.plus-icon {
+  font-size: 28px;
+  margin-top: 8px;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  flex-shrink: 0;
+}
+.icons-container {
+  display: flex;
+  gap: 20px;
+}
+.notification-icon,
+.email-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.notification-icon-container,
+.messages-icon-container,
+.comment-icon-container {
+  position: relative;
+}
+.notifications-counter,
+.messages-counter,
+.comment-counter {
+  position: absolute;
+  top: 1px;
+  right: -5px;
+  background-color: rgb(194, 5, 5);
+  color: white;
+  font-size: 11px;
+  padding: 0 6px;
+  border-radius: 10px;
+}
+.current-user-profile img {
+  margin-top: 8px;
+  width: 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid var(--yellow);
+}
+/* Navebar */
+
+/* ================ Navigation bar ============= */
+.logo {
+  font-size: 18px;
+  color: var(--heading);
+  text-decoration: none;
+}
+.logo h1 {
+  font-weight: 700;
+}
+.span {
+  color: var(--yellow);
+}
+#mynavbar {
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  background-color: var(--bgcolor);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 6%;
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 2;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li .tag {
+  color: var(--heading);
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+/* #navbar li .tag.active {
+  color: var(--yellow);
+} */
+#navbar li .tag:hover {
+  color: var(--yellow);
+}
+
+.btn {
+  align-items: center;
+  background-color: var(--yellow);
+  border-radius: 2px;
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 5px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  min-width: 128px;
+}
+.login {
+  background-color: var(--yellow);
+  color: var(--bgcolor);
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.signup {
+  background-color: var(--bgcolor);
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+}
+#mobile {
+  display: none;
+}
+#mobile i {
+  font-size: 18px;
+  color: var(--heading);
+  background-color: transparent;
+  box-shadow: none;
+}
+/* =============== Responsiveness for Navigation Bar ================ */
+@media screen and (max-width: 769px) {
+  nav{
+    width: 100%;
+  }
+  #navbar {
+    align-items: flex-start;
+    background-color: var(--darkblack);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    padding: 40px 0 0 10px;
+    position: fixed;
+    right: -200px;
+    top: 80px;
+    transition: 0.3s ease-in-out;
+    width: 200px;
+    z-index: 2;
+  }
+  .getmenu{
+    display: block;
+  }
+  .btn {
+    display: none;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li .tag {
+    color: var(--bgcolor);
+  }
+  #navbar li {
+    margin-bottom: 20px;
+  }
+  #mobile {
+    display: block;
+  }
+  #mobile i {
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 412px) {
+  nav{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 280px) {
+  
+  #mobile i {
+    margin-right: -300px;
+  }
+}

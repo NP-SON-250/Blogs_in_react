@@ -1,0 +1,130 @@
+.about-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-video {
+  position: relative;
+}
+.play-btn {
+  padding: auto;
+  display: block;
+  position: absolute;
+  right: -35px;
+  bottom: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  transition: 0.3s ease-in-out;
+}
+.Play-icon {
+  margin-top: 6px;
+  margin-left: 4px;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.play-btn:hover,
+.Play-icon:hover {
+  transform: scale(1.07);
+}
+
+.about-video img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about-info {
+  padding: 48px 15px 48px 48px;
+}
+.sub-heading {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.about-heading > h2 {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  margin-bottom: 24px;
+}
+.about-desc {
+  color: rgb(128, 128, 128);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.tabulation ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+.tabulation ul li {
+  color: var(--heading);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: var(--bgcolors);
+  transition: 0.3s ease-in-out;
+}
+.tabulation ul li:hover {
+  color: var(--bgcolor);
+  background-color: var(--yellow);
+}
+.tab-pane {
+  color: #808080;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #0000000d;
+  padding: 20px;
+  margin-top: 8px;
+  line-height: 28px;
+}
+.testimony-section {
+  padding-top: 112px;
+}
+.testimony-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.testimony-title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* ===================== testimony-stage ================ */
+.testimony-stage {
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+/* ================== responsiveness for mobile device ================== */
+@media screen and (max-width: 1024px) {
+  .about-row {
+    grid-template-columns: 1fr;
+  }
+  .tabulation ul {
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+  }
+  .about-info {
+    padding: 18px;
+  }
+  .play-btn {
+    display: none;
+  }
+  .hero-page-title{
+    font-size: 10px;
+  }
+}

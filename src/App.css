@@ -1,0 +1,37 @@
+:root {
+  --bgcolor: #fff;
+  --heading: #010100;
+  --paragraph: #cfcece;
+  --yellow: #ffd369;
+  --gray: #f9f8fa;
+  --darkblack: #222930;
+  --radius: 8px;
+  --puple: hsla(317, 88%, 67%, 0.8);
+  --yello_g: hsla(33, 95%, 70%, 0.8);
+}
+.container {
+  padding: 0 6%;
+}
+/* ==================== Home Blog section ============= */
+.blog-section {
+  padding-top: 60px;
+}
+/* ======================== Article Blog Section =============== */
+.Articles-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 4%;
+  }
+  .blog-section {
+    padding-top: 30px;
+  }
+}

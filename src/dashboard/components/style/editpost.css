@@ -1,0 +1,40 @@
+.edit-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.modalContainer{
+  margin-left: 10%;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  
+  .modalContainer .modal-title h2{
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .edit-section .modalContainer{
+  background-color: gray;
+}
+  .search-form #inputs{
+    width: 135px;
+  }
+  #customers {
+    font-size: 8px;
+  }
+  
+  #customers td,
+  #customers th {
+    padding: 2px 2px;
+    font-weight: 300;
+  }
+  .modalContainer h2{
+    font-size: 8px;
+
+  }
+  .modal-footer{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}

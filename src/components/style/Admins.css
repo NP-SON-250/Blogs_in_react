@@ -1,0 +1,49 @@
+#navbaradmins {
+    display: none;
+  }
+
+  /* =============== Responsiveness for Navigation Bar ================ */
+@media screen and (max-width: 1024px) {
+  #navbaradmins {
+    align-items: flex-start;
+    background-color: var(--darkblack);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    margin-top: 100px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    padding: 40px 0 0 10px;
+    position: fixed;
+    right: -200px;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    width: 105px;
+    z-index: 100;
+  }
+  .btn {
+    display: block;
+    background-color: transparent;
+    
+  }
+  #navbaradmins.active {
+    right: 20px;
+  }
+  #navbaradmins li .tag {
+    color: var(--bgcolor);
+  }
+  #navbaradmins li {
+    margin-bottom: 20px;
+  }
+  #mobile {
+    display: block;
+    
+  }
+  #mobile i {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  }
+
+  

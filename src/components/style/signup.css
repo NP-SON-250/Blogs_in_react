@@ -1,0 +1,44 @@
+.sign-section {
+  display: grid;
+  grid-template-columns: auto;
+  place-content: center;
+  place-items: center;
+}
+.sign-container {
+  margin: 112px 0;
+  background-color: var(--gray);
+  padding: 20px;
+  width: 500px;
+}
+.sign-container h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.sign-container input[type="text"],
+input[type="password"] {
+  border-radius: 5px;
+  border: 0.8px solid rgb(128, 128, 128);
+  width: 100%;
+  height: 52px;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+}
+.sign-container > button {
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  padding: 16px 32px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: var(--yellow);
+  margin: 24px 0;
+}
+
+@media screen and (max-width: 769px) {
+  .sign-container {
+    width: auto;
+  }
+}

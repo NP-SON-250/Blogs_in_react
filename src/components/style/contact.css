@@ -1,0 +1,99 @@
+/* =================== contact-info ============== */
+.contact-section {
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+.contact-map {
+  background-color: rgb(248, 249, 250);
+  padding: 30px;
+}
+.contact-title h1 {
+  color: var(--heading);
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 5px;
+  color: rgb(128, 128, 128);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  margin-bottom: 48px;
+}
+.address p {
+  width: 272px;
+}
+.bold {
+  color: var(--heading) !important;
+}
+/* ==================== Contact form ================== */
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form-groupe {
+  background-color: rgb(248, 249, 250);
+  padding: 30px;
+}
+.form-groupe {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.form-groupe input {
+  border-radius: 5px;
+  padding: 10px;
+  border: 0.8px solid rgb(128, 128, 128);
+  width: 100%;
+  height: 52px;
+}
+.form-groupe textarea {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgb(128, 128, 128);
+  width: 100%;
+  resize: none;
+}
+.send-btn {
+  color: white;
+  font-weight: 500;
+  background-color: rgb(255, 211, 105);
+  border-radius: 3px;
+  padding: 16px 48px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.send-btn:hover {
+  opacity: 0.7;
+}
+/* ====================== Responsiveness for Mobile Devices ==================== */
+@media screen and (max-width: 769px) {
+  .contact-title h1 {
+    margin-bottom: 10px;
+  }
+  .contact-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-groupe {
+    padding: 10px;
+  }
+  .contact-map {
+    padding: 10px;
+  }
+  .form-groupe {
+    margin-bottom: 10px;
+  }
+}
