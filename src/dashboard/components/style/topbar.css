@@ -160,6 +160,7 @@
   }
   .getmenu{
     display: block;
+    background-color: transparent;
   }
   .btn {
     display: none;
