@@ -6,11 +6,12 @@
 @media screen and (max-width: 1024px) {
   #navbaradmins {
     align-items: flex-start;
-    background-color: var(--darkblack);
+    background: linear-gradient(90deg, brown, gold);
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     height: 25vh;
+    width: 30%;
     margin-top: 100px;
     border-radius: 10px;
     justify-content: flex-start;

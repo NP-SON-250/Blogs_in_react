@@ -50,16 +50,16 @@ h4 {
   font-size: 34px;
 }
 .gold {
-  background-color: blueviolet;
+  background: linear-gradient(90deg, brown, gold);
 }
 .dodge-blue {
-  background-color: dodgerblue;
+  background: linear-gradient(90deg, yellow, green);
 }
 .tomato {
-  background-color: tomato;
+  background: linear-gradient(90deg, green, blue);
 }
 .gray {
-  background-color: lightseagreen;
+  background: linear-gradient(90deg, blue, brown);
 }
 
 

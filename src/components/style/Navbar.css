@@ -12,7 +12,7 @@
 }
 nav {
   align-items: center;
-  background-color: var(--bgcolor);
+  background-color: gray;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   display: flex;
   justify-content: space-between;
@@ -40,11 +40,8 @@ nav {
   transition: 0.3s ease-in-out;
 }
 
-/* #navbar li .tag.active {
-  color: var(--yellow);
-} */
 #navbar li .tag:hover {
-  color: var(--yellow);
+  color: green;
 }
 
 .btn {
@@ -57,9 +54,10 @@ nav {
   margin-right: 5px;
   padding: 12px 24px;
   transition: 0.3s ease-in-out;
+  background-color: white;
 }
 .login {
-  background-color: var(--yellow);
+  background-color: white;
   color: var(--bgcolor);
 }
 .btn:hover {
